@@ -5,6 +5,7 @@ resource "symbiosis_cluster" "cluster" {
 
 resource "symbiosis_node_pool" "node_pool" {
   cluster   = symbiosis_cluster.cluster.name
+  name      = var.node_pool_name
   node_type = var.node_type
   quantity  = var.quantity
   depends_on = [
