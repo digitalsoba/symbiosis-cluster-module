@@ -16,7 +16,7 @@ variable "node_type" {
   description = "Node type of the worker nodes"
 }
 
-variable "node_type" {
+variable "node_pool_name" {
   type        = string
   default     = "symbiosis-cluster-node-pool"
   description = "Node pool names"
